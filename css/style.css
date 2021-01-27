@@ -1,3 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --signup-color: rgb(68, 211, 151);
+}
+
 body {
   background: #3b5998;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
@@ -8,7 +16,9 @@ body {
   display: block;
   background: #f7f7f7;
   width: 25%;
-  margin: 3% auto;
+  margin: 3% auto 0;
+  /* border-radius: 10px;
+  box-shadow: 2px 6px 8px 8px rgba(0, 0, 0, 0.2); */
 }
 
 /* $$$$$$$$$$$$$$$$$$$$$ FORM HEADER $$$$$$$$$$$$$$$$$$$$$ */
@@ -16,8 +26,7 @@ body {
 .form-header {
   text-align: center;
   display: block;
-  padding-top: 2px;
-  /* margin-top: 4rem; */
+  padding-top: 1px;
 }
 
 .form-title {
@@ -30,17 +39,83 @@ body {
   font-size: 0.8rem;
   margin-top: 0;
   font-weight: 100;
+  margin-bottom: 6%;
 }
 
 /* $$$$$$$$$$$$$$$$$$$$$ FORM ENTRIES $$$$$$$$$$$$$$$$$$$$$ */
 
 .custom-form-label {
   display: block;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
+  margin: 2px 5%;
+  color: #838181;
 }
 
 .custom-form-input {
   display: block;
+  margin: 2px 5%;
+  border: 1px solid #e0dfdf;
+  border-radius: 3px;
+  height: 28px;
+  width: 90%;
+  margin-bottom: 5%;
 }
 
+/* $$$$$$$$$$$$$$$$$$$$$ SIGN UP BUTTON $$$$$$$$$$$$$$$$$$$$$ */
+
+.signup-btn {
+  display: block;
+  margin: 2px 5%;
+  border: 1px solid #e0dfdf;
+  border-radius: 5px;
+  height: 28px;
+  width: 90%;
+  margin-bottom: 5%;
+  background: var(--signup-color);
+  color: #fff;
+  font-size: 9px;
+  /* padding-bottom: 5%; */
+  cursor: pointer;
+}
+
+.signup-btn:hover {
+  background: rgb(9, 131, 80);
+}
 /* $$$$$$$$$$$$$$$$$$$$$ FORM FOOTER $$$$$$$$$$$$$$$$$$$$$ */
+
+.form-footer-text {
+  font-size: 10px;
+  line-height: 1rem;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.form-footer-link {
+  text-decoration: none;
+}
+
+.form-footer-link:hover {
+  text-decoration: none;
+  color: coral;
+}
+
+/* $$$$$$$$$$$$$$$$$$$$$ LOGIN TEXT $$$$$$$$$$$$$$$$$$$$$ */
+
+.login-text {
+  display: block;
+  width: 25%;
+  margin: 0 auto;
+  color: #fff;
+  padding: 0 4%;
+  font-size: 12px;
+}
+
+.login-text a {
+  text-decoration: none;
+  color: var(--signup-color);
+}
+
+.login-text a:hover {
+  text-decoration: none;
+  color: coral;
+}
