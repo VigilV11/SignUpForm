@@ -1,0 +1,46 @@
+body {
+  background: #3b5998;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container {
+  display: block;
+  background: #f7f7f7;
+  width: 25%;
+  margin: 3% auto;
+}
+
+/* $$$$$$$$$$$$$$$$$$$$$ FORM HEADER $$$$$$$$$$$$$$$$$$$$$ */
+
+.form-header {
+  text-align: center;
+  display: block;
+  padding-top: 2px;
+  /* margin-top: 4rem; */
+}
+
+.form-title {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 0.9rem;
+}
+
+.form-sub-title {
+  font-size: 0.8rem;
+  margin-top: 0;
+  font-weight: 100;
+}
+
+/* $$$$$$$$$$$$$$$$$$$$$ FORM ENTRIES $$$$$$$$$$$$$$$$$$$$$ */
+
+.custom-form-label {
+  display: block;
+  font-size: 0.8rem;
+}
+
+.custom-form-input {
+  display: block;
+}
+
+/* $$$$$$$$$$$$$$$$$$$$$ FORM FOOTER $$$$$$$$$$$$$$$$$$$$$ */
