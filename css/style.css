@@ -1,15 +1,23 @@
+:root {
+  --background-color: #dccde8;
+  --btn-color: #ffc857;
+  --btn-hovercolor: #e9724c;
+  --link-color: #477998;
+  --link-hovercolor: #823329;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
-:root {
-  --signup-color: rgb(68, 211, 151);
+html {
+  background-color: var(--background-color);
+  background-image: url('../imgs/wood.png');
 }
 
 body {
-  background: #3b5998;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
     'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -74,16 +82,16 @@ body {
   height: 28px;
   width: 90%;
   margin-bottom: 5%;
-  background: var(--signup-color);
-  color: #fff;
-  font-size: 9px;
-  /* padding-bottom: 5%; */
+  background: var(--btn-color);
+  color: #000;
+  font-size: 11px;
   cursor: pointer;
 }
 
 .signup-btn:hover {
-  background: rgb(9, 131, 80);
+  background: var(--btn-hovercolor);
 }
+
 /* $$$$$$$$$$$$$$$$$$$$$ FORM FOOTER $$$$$$$$$$$$$$$$$$$$$ */
 
 .form-footer-text {
@@ -95,11 +103,12 @@ body {
 
 .form-footer-link {
   text-decoration: none;
+  color: var(--link-color);
 }
 
 .form-footer-link:hover {
   text-decoration: none;
-  color: coral;
+  color: var(--link-hovercolor);
 }
 
 /* $$$$$$$$$$$$$$$$$$$$$ LOGIN TEXT $$$$$$$$$$$$$$$$$$$$$ */
@@ -109,16 +118,17 @@ body {
   width: 25%;
   margin: 15px auto;
   color: #fff;
-  padding: 0 4%;
+  padding: 0 3%;
   font-size: 12px;
 }
 
 .login-text a {
   text-decoration: none;
-  color: var(--signup-color);
+  color: var(--btn-color);
+  font-size: 14px;
 }
 
 .login-text a:hover {
   text-decoration: none;
-  color: coral;
+  color: var(--btn-hovercolor);
 }
